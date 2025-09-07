@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Sakshi Dodke</title>
+
+  <!-- Google Font (matches bold rounded style in screenshots) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- Particle canvas background -->
+  <canvas id="particles"></canvas>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="#home">SD</a>
+
+       <nav class="nav-links" id="desktopNav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a> 
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="cta" href="#contact">Get in Touch →</a>
+
+      <button id="mobileToggle" aria-label="Menu" class="mobile-btn">☰</button>
+    </div>
+
+    <!-- mobile menu (hidden on desktop) -->
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a> 
+      <a href="#projects">Projects</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#contact">Contact</a>
+      <a class="cta mobile-cta" href="#contact">Get in Touch →</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="home" class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="hello">Hello, I'm</p>
+        <h1 class="name-line">
+          <span class="first">Sakshi</span>
+          <span class="last">Dodke</span>
+        </h1>
+        <h3 class="title">Full Stack Development</h3>
+
+        <p class="lead">
+          Passionate about crafting intuitive and user-friendly web experiences with a strong focus on frontend development. 
+          Currently pursuing B.Tech in Computer Engineering at Pimpri Chinchwad College of Engineering, Pune.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View My Work</a>
+          <a class="btn outline" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="socials">
+  
+          <a class="social" href="https://www.linkedin.com/in/sakshi-dodke/" 
+           title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+
+          <a class="social" href="https://github.com/Sakshi-Dodke" 
+          title="GitHub" target="_blank" rel="noopener noreferrer">Git</a>
+
+          <a class="social" href="mailto:sakshidodke04@gmail.com" 
+          title="Email">✉</a>
+
+          <a class="social" href="tel:+919321763307" 
+           title="Phone">📞</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Put your actual portrait image in assets/profile.jpg -->
+        <div class="portrait-wrap">
+          <img src="assets/profile.jpg" alt="Palvi portrait" class="portrait" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-inner">
+        <div class="about-text">
+        <p> I’m a dedicated Frontend-focused Full Stack Developer with a strong foundation in building modern, responsive, and user-friendly web applications. 
+         I enjoy turning ideas into engaging digital experiences that are both visually appealing and highly functional.</p>
+
+        <p> My expertise lies in combining frontend technologies with backend knowledge to deliver seamless, creative, and performance-driven solutions. 
+        I have hands-on experience with HTML, CSS, JavaScript, React, Node.js, Express, and databases like MySQL and MongoDB, and I continuously explore new frameworks and tools to enhance my skills.</p>
+
+        <p>Looking ahead, I aim to contribute to impactful projects that merge technology with innovation, grow consistently as a developer, and mentor others on their journey to achieve technical excellence.</p>
+        </div>
+
+
+        <div class="about-cards">
+          <div class="card">
+            <div class="icon">💻</div>
+            <h4>Frontend Development</h4>
+            <p>Designing responsive, and user-friendly interfaces</p>
+          </div>
+          <div class="card">
+            <div class="icon">⚙️</div>
+            <h4>Backend Development</h4>
+            <p>Building secure, scalable server-side applications</p>
+          </div>
+          <div class="card">
+            <div class="icon">🏆</div>
+            <h4>Leadership</h4>
+            <p>Guiding teams, and fostering collaboration</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- EDUCATION -->
+      <section id="education" class="section education">
+       <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+
+         <div class="timeline-item">
+         <div class="timeline-dot"></div>
+        <div class="timeline-content">
+      <h4>B.Tech</h4>
+        <p>Pimpri Chinchwad College Of Engineering, Pune</p>
+        <p>2023 – Present</p>
+        <p>Currently in final year with 7.61 CGPA</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h4>Diploma</h4>
+        <p>Bharati Vidyapeeth Institute of Technology, Kharghar</p>
+        <p>2023</p>
+        <p>Scored 90.47%</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h4>ICSE - 10th Board</h4>
+        <p>Seventh-Day Adventist Higher Secondary School, Sanpada</p>
+        <p>2020</p>
+        <p>Scored 87%</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-inner">
+        <div class="tabs">
+          <button class="tab active" data-target="programming">Programming</button>
+          <button class="tab" data-target="web-tech">Frameworks & Tools</button>
+          <button class="tab" data-target="databases">Databases</button>
+        </div>
+
+        <div class="chips" id="programming">
+          <span class="chip">C</span>
+          <span class="chip">C++</span>
+          <span class="chip">Java</span>
+          <span class="chip">Python</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">PHP</span>
+          <span class="chip">SQL</span>
+        </div>
+        
+        <div class="chips hidden" id="web-tech">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">React</span>
+          <span class="chip">Angular</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">Tailwind</span>
+        </div>
+
+        <div class="chips hidden" id="databases">
+          <span class="chip">MySQL</span>
+          <span class="chip">MongoDB</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <img src="assets/proj1.png" alt="Project 1" />
+          <div class="project-body">
+            <h3 class="project-title">Digital Bookshelf</h3>
+            <p class="project-text">A web-based platform designed to provide an inclusive reading experience for physically disabled individuals, featuring user-friendly navigation and accessibility support.</p>
+            <div class="tags">
+             <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="assets/proj2.png" alt="Project 2" />
+          <div class="project-body">
+            <h3 class="project-title">Quiz Management System</h3>
+            <p class="project-text"> Built a Java Swing-based desktop system supporting timed quizzes, real-time scoring, detailed analytics, secure role-based access, and efficient database management for users.</p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">Swing (JFrame)</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JDBC</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="assets/proj3.png" alt="Project 3" />
+          <div class="project-body">
+            <h3 class="project-title">Image Steganography</h3>
+            <p class="project-text">  Designed an Android mobile application that hides secret text messages inside images using image encoding techniques, ensuring secure communication.</p>
+            <div class="tags">
+              <span class="tag">Android</span>
+              <span class="tag">Java</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+<section id="leadership" class="section leadership">
+  <h2 class="section-title">Leadership Experience</h2>
+  <div class="lead-card">
+    <div class="lead-col">
+      <h4>Technical Head | PCCOE ACM-W Student Chapter</h4>
+      <ul>
+        <li>Organized and managed multiple technical events and coding competitions to foster peer learning.</li>
+        <li>Collaborated with team members to plan workshops and seminars on emerging technologies.</li>
+        <li>Provided technical guidance and mentorship to junior members of the student chapter.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-inner">
+        <div class="contact-left">
+          <p>I am open to collaborations, professional opportunities, and networking. Please feel free to get in touch.</p>
+          <ul class="contact-list">
+            <li>📞 +91-9321763307</li>
+            <li>✉ <a href="mailto:sakshidodke04@gmail.com">sakshidodke04@gmail.com</a></li>
+            <li>🔗 <a href="https://www.linkedin.com/in/sakshi-dodke/" target="_blank" rel="noopener noreferrer">Visit My LinkedIn</a></li>
+            <li>🐙 <a href="https://github.com/Sakshi-Dodke" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="row">
+            <input name="name" placeholder="Your name" />
+            <input name="email" placeholder="Your email" />
+          </div>
+          <input name="subject" placeholder="Subject" />
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button class="btn primary full">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Sakshi Dodke</strong>
+        <div class="muted">Frontend-focused Full Stack Developer</div>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-links">
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="GitHub">🐱</a>
+          <a href="#" title="Email">✉</a>
+        </nav>
+        <div class="copyright">© 2025 Sakshi Dodke. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
