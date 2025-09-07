@@ -4,6 +4,13 @@
    Comments indicate structure and purpose.
 */
 
+/* Apply Poppins font to everything */
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
 /* ---------- Reset & base ---------- */
 * { box-sizing: border-box; }
 html,body{ height:100%; margin:0; font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#e6e6f0; background:#0c0f1c; }
@@ -31,14 +38,16 @@ a { color:inherit; text-decoration:none; }
   border-bottom:1px solid rgba(255,255,255,0.04);
   backdrop-filter: blur(6px);
 }
-.nav-inner{ max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:20px; padding:12px 24px; justify-content:space-between; }
+.nav-inner{ max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:20px; padding:12px 24px; justify-content:space-between }
 .logo{
   display:inline-grid; place-items:center; width:48px; height:48px; border-radius:50%;
   background:transparent; border:3px solid #8b66f2; color:#8b66f2; font-weight:800; font-size:18px;
 }
-.nav-links{ display:flex; gap:28px; align-items:center; }
-.nav-links a{ color:rgba(255,255,255,0.8); font-weight:600; transition:color .18s; }
-.nav-links a:hover{ color:#fff; }
+.nav-links{ display:flex; gap:28px; align-items:center;  }
+.nav-links a{ color:rgba(255,255,255,0.8); font-weight:600; transition:color .18s;   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}
+.nav-links a:hover {
+    color: #8b66f2;            /* accent color on hover */
+}
 .cta{ background:#fff; color:#0c0f1c; padding:8px 14px; border-radius:6px; font-weight:600; box-shadow: 0 1px 0 rgba(0,0,0,0.2); }
 .mobile-btn{ display:none; background:#ddd1c3; border:none; padding:6px 8px; border-radius:6px; cursor:pointer; }
 
@@ -189,9 +198,29 @@ a { color:inherit; text-decoration:none; }
 .tag{ background:transparent; border:1px solid rgba(255,255,255,0.05); padding:6px 8px; border-radius:8px; font-size:13px; }
 
 /* Leadership card */
-.lead-card{ margin-top:28px; background:rgba(255,255,255,0.03); border-radius:10px; padding:22px; display:flex; gap:20px; border:1px solid rgba(255,255,255,0.04); }
-.lead-col{ flex:1; }
-.lead-col h4{ color:#b196ff; }
+.lead-card {
+    margin-top: 28px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+    padding: 22px;
+    display: flex;
+    gap: 20px;
+    border: 1px solid rgba(255,255,255,0.04);
+}
+
+.lead-col {
+    flex: 1;
+}
+
+.lead-col h4 {
+    color: #b196ff;
+}
+
+/* Add space after each list item */
+.lead-col ul li {
+    margin-bottom: 10px;  /* space after each bullet */
+}
+
 
 /* Contact */
 .contact-inner{ display:flex; gap:40px; margin-top:18px; }
