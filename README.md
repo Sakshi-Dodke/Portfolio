@@ -12,16 +12,6 @@ This is the personal portfolio of **Sakshi Dodke**, showcasing skills, projects,
 - **Contact:** Phone, email, LinkedIn, and GitHub links.
 - **Footer:** Consistent name, role, social links, and copyright notice.
 
-## File Structure
-
-portfolio/
-│
-├── index.html # Main HTML file
-├── styles.css # CSS styles
-├── script.js # JavaScript for tabs and interactions
-├── assets/ # Images, icons, or other media
-└── README.md # This file
-
 ## Technologies Used
 - HTML, CSS, JavaScript
 - Responsive design for desktop and mobile
